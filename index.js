@@ -135,7 +135,7 @@ function stay(){
         }
         dealerSumEL.textContent = "Dealers Sum: " + dealerSum
         hasStay = true
-        if (isAlive && (playerSum > dealerSum || dealerSum > 21)){
+        if (isAlive && (playerSum >= dealerSum || dealerSum > 21)){
             player.chips += betSize
             playerEl.textContent = player.name + ": $" + player.chips
             celebrationEl.textContent = "Congratulations you have won your bet amount!!! Place bet first! Then, click start game for new game"    
