@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="blackJack.css"/>
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+        <a href="howToPlay.html" target="_blank">How to play?</a>
+        <p id="message-el">Choose your bet size first! Then click start game for new game!</p>
+        <p id="playerCards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <p id="dealerCards-el">Dealer's Cards: </p>
+        <p id="dealerSum-el">Dealer's Sum:</p>
+        <button id="start-btn" onclick="startGame()">START GAME</button>
+        <br/>
+        <button id="newCard-btn" onclick="hit()">HIT</button>
+        <button id="stay-btn" onclick="stay()">STAY</button>
+        <br/>
+        <p id="player-el"></p>
+        <button id="chip" onclick="bet10()">10</button>
+        <button id="chip" onclick="bet20()">20</button>
+        <button id="chip" onclick="bet50()">50</button>
+        <button id="chip" onclick="bet75()">75</button>
+        <p id="celebration-el"></p>
+        <script src="blackJack.js"></script>
+    </body>
+</html>
